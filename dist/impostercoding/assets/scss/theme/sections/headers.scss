@@ -153,13 +153,15 @@ header {
 
 .page-header {
   .floating-box {
-    margin-top: 7em;
+    margin-top: 5em;
     border-radius: $border-radius;
     .box {
       margin-top: -40px;
     }
     .lead {
       margin-top: 0;
+      font-size: 1.5rem !important;
+      font-weight: 500 !important;
     }
   }
 }
