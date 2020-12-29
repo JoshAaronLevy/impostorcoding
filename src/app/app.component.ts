@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Headroom from 'headroom.js';
+// import Headroom from 'headroom.js';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,13 +11,13 @@ export class AppComponent implements OnInit {
   constructor(public router: Router){}
 
   ngOnInit(){
-    const headroom = new Headroom(document.querySelector('#navbar-main'), {
-      offset: 300,
-      tolerance: {
-        up: 30,
-        down: 30
-      },
-    });
-    headroom.init();
+    // const headroom = new Headroom(document.querySelector('#navbar-main'), {
+    //   offset: 300,
+    //   tolerance: {
+    //     up: 30,
+    //     down: 30
+    //   },
+    // });
+    // headroom.init();
   }
 }

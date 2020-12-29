@@ -11,22 +11,22 @@ export class HomeHeroComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    const body = document.getElementsByTagName('body')[0];
-    body.classList.add('pricing-page');
-    const navbar = document.getElementById('navbar-main');
-    navbar.classList.add('bg-white');
-    navbar.classList.remove('navbar-dark');
-    const logoImage: any = document.getElementById('brand-logo');
-    logoImage.src = 'assets/img/brand/red.png';
+    // const body = document.getElementsByTagName('body')[0];
+    // body.classList.add('pricing-page');
+    // const navbar = document.getElementById('navbar-main');
+    // navbar.classList.add('bg-white');
+    // navbar.classList.remove('navbar-dark');
+    // const logoImage: any = document.getElementById('brand-logo');
+    // logoImage.src = 'assets/img/brand/red.png';
   }
 
   ngOnDestroy(){
-    const body = document.getElementsByTagName('body')[0];
-    body.classList.remove('pricing-page');
-    const navbar = document.getElementById('navbar-main');
-    navbar.classList.remove('bg-white');
-    navbar.classList.add('navbar-dark');
-    const logoImage: any = document.getElementById('brand-logo');
-    logoImage.src = 'assets/img/brand/argon-white.png';
+    // const body = document.getElementsByTagName('body')[0];
+    // body.classList.remove('pricing-page');
+    // const navbar = document.getElementById('navbar-main');
+    // navbar.classList.remove('bg-white');
+    // navbar.classList.add('navbar-dark');
+    // const logoImage: any = document.getElementById('brand-logo');
+    // logoImage.src = 'assets/img/brand/argon-white.png';
   }
 }
