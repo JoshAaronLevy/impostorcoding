@@ -49,7 +49,6 @@ export class PostComponent implements OnInit, OnDestroy {
     this.showData = false;
     this.step1 = true;
     this.progressLoaderOne();
-    // this.fetchPost();
   }
 
   progressLoaderOne() {
@@ -58,7 +57,7 @@ export class PostComponent implements OnInit, OnDestroy {
       this.step2 = true;
       this.fetchPost();
       return stepOne;
-    }, 750);
+    }, 150);
   }
 
   progressLoaderTwo() {
@@ -67,14 +66,14 @@ export class PostComponent implements OnInit, OnDestroy {
       this.step4 = true;
       this.progressLoaderThree();
       return stepTwo;
-    }, 750);
+    }, 150);
   }
 
   progressLoaderThree() {
     const stepThree = setTimeout(() => {
       this.displayData();
       return stepThree;
-    }, 250);
+    }, 150);
   }
 
   fetchPost() {

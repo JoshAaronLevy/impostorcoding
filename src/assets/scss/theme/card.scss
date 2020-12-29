@@ -14,7 +14,6 @@
 
     .card-profile-image {
       position: relative;
-      //min-height: 130px;
 
       img {
         max-width: 500px;
@@ -24,6 +23,7 @@
         position: relative;
         left: 50%;
         transition: $transition-base;
+        box-shadow: none !important;
       }
     }
 
