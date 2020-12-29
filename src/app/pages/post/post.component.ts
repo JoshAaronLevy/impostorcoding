@@ -43,6 +43,7 @@ export class PostComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.loading = true;
     var body = document.getElementsByTagName("body")[0];
     body.classList.add("profile-page");
     this.showData = false;
