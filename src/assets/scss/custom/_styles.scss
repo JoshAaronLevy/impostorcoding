@@ -1,3 +1,9 @@
+.nav-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+}
+
 .home-title {
   font-size: 3.5rem !important;
 }
@@ -47,6 +53,10 @@ ul.blog-list {
 
 .blog-list ul li {
   margin-bottom: 40px;
+}
+
+.blog-list-item {
+  cursor: pointer !important;
 }
 
 .blog-list-image {
@@ -102,13 +112,10 @@ ul.blog-list {
   }
 }
 
-.post-content {
-  margin-top: 60px;
-}
-
 .post-content p {
   font-size: 1.2rem;
   font-weight: 500;
+  margin: 70px 35px;
 }
 
 .post-content ol li {

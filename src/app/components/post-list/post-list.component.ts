@@ -1,5 +1,6 @@
 import { butterService } from './../../services/butterCMS.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post-list',
@@ -13,7 +14,9 @@ export class PostListComponent implements OnInit, OnDestroy {
   currentLength: number = 10;
   moreAvailable: boolean;
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.getPosts();
@@ -49,6 +52,10 @@ export class PostListComponent implements OnInit, OnDestroy {
         this.posts.push(this.newPosts[i]);
       }
     });
+  }
+
+  viewPost(post) {
+    this.router.navigate([`/${post.slug}`]);
   }
 
   ngOnDestroy() {}
