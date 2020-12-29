@@ -1,29 +1,13 @@
-// Contents
-//
-// Navbar
-// Navbar brand
-// Navbar nav
-// Navbar text
-// Navbar divider
-// Responsive navbar
-// Navbar position
-// Navbar themes
-
-// Navbar
-//
-// Provide a static navbar from which we expand to create full-width, fixed, and
-// other navbar variations.
-
 .navbar {
   position: relative;
+  height: 85px;
   display: flex;
-  flex-wrap: wrap; // allow us to do the line break for collapsing content
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between; // space out brand from logo
-  padding: $navbar-padding-y $navbar-padding-x;
+  justify-content: space-between;
+  padding: 0px;
+  border-bottom: 1px solid #182B4D;
 
-  // Because flex properties aren't inherited, we need to redeclare these first
-  // few properties so that content nested within behave properly.
   > .container,
   > .container-fluid {
     display: flex;
@@ -33,11 +17,8 @@
   }
 }
 
-// Navbar brand
-//
-// Used for brand, project, or site names.
-
 .navbar-brand {
+  color: #5F72E4;
   display: inline-block;
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
@@ -51,13 +32,9 @@
   }
 }
 
-// Navbar nav
-//
-// Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
-
 .navbar-nav {
   display: flex;
-  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -73,39 +50,24 @@
   }
 }
 
-// Navbar text
-//
-//
-
 .navbar-text {
   display: inline-block;
   padding-top: $nav-link-padding-y;
   padding-bottom: $nav-link-padding-y;
 }
 
-// Responsive navbar
-//
-// Custom styles for responsive collapsing and toggling of navbar contents.
-// Powered by the collapse Bootstrap JavaScript plugin.
-
-// When collapsed, prevent the toggleable navbar contents from appearing in
-// the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
-// on the `.navbar` parent.
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
-  // For always expanded or extra full navbars, ensure content aligns itself
-  // properly vertically. Can be easily overridden with flex utilities.
   align-items: center;
 }
 
-// Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
   padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
-  background-color: transparent; // remove default button style
-  border: $border-width solid transparent; // remove default button style
+  background-color: transparent;
+  border: $border-width solid transparent;
   @include border-radius($navbar-toggler-border-radius);
 
   @include hover-focus {
@@ -113,8 +75,6 @@
   }
 }
 
-// Keep as a separate element so folks can easily override it with another icon
-// or image file as needed.
 .navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;

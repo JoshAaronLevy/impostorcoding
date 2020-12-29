@@ -14,12 +14,7 @@
         <span class="navbar-toggler-icon"> </span>
       </button>
     </div>
-    <div
-      class="navbar-collapse"
-      [isAnimated]="true"
-      [collapse]="isCollapsed"
-      id="example-header-2"
-    >
+    <div class="navbar-collapse navbar-link-container" [isAnimated]="true" [collapse]="isCollapsed" id="example-header-2">
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
@@ -40,7 +35,7 @@
           </div>
         </div>
       </div>
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav mx-auto navbar-list">
         <li class="nav-item">
           <a routerLink="/" class="nav-link"> Posts </a>
         </li>
@@ -51,17 +46,14 @@
           <a routerLink="/" class="nav-link"> Tags </a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right navbar-social">
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/ImposterCoding">
+          <a class="nav-link" href="https://twitter.com/imposter_coding" target="_blank">
             <i class="fab fa-twitter"> </i>
           </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            href="https://www.facebook.com/ImposterCoding"
-          >
+          <a class="nav-link" href="https://www.facebook.com/impostercoding" target="_blank">
             <i class="fab fa-facebook-square"> </i>
           </a>
         </li>
