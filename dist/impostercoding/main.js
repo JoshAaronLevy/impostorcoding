@@ -8100,7 +8100,6 @@ var PostComponent = /** @class */ (function () {
         this.showData = false;
         this.step1 = true;
         this.progressLoaderOne();
-        // this.fetchPost();
     };
     PostComponent.prototype.progressLoaderOne = function () {
         var _this = this;
@@ -8109,7 +8108,7 @@ var PostComponent = /** @class */ (function () {
             _this.step2 = true;
             _this.fetchPost();
             return stepOne;
-        }, 750);
+        }, 150);
     };
     PostComponent.prototype.progressLoaderTwo = function () {
         var _this = this;
@@ -8118,14 +8117,14 @@ var PostComponent = /** @class */ (function () {
             _this.step4 = true;
             _this.progressLoaderThree();
             return stepTwo;
-        }, 750);
+        }, 150);
     };
     PostComponent.prototype.progressLoaderThree = function () {
         var _this = this;
         var stepThree = setTimeout(function () {
             _this.displayData();
             return stepThree;
-        }, 250);
+        }, 150);
     };
     PostComponent.prototype.fetchPost = function () {
         var _this = this;
