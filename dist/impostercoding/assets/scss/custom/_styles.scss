@@ -1,3 +1,9 @@
+.nav-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+}
+
 .home-title {
   font-size: 3.5rem !important;
 }
@@ -49,6 +55,10 @@ ul.blog-list {
   margin-bottom: 40px;
 }
 
+.blog-list-item {
+  cursor: pointer !important;
+}
+
 .blog-list-image {
   width: 100%;
 }
@@ -89,6 +99,22 @@ ul.blog-list {
   }
 }
 
+#border-component {
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 5 !important;
+  margin: 50px 0px !important;
+}
+
+.spinner-border {
+  width: 10rem !important;
+  height: 10rem !important;
+  border: 1em solid #59cb90 !important;
+  border-right-color: transparent !important;
+  -webkit-animation: spinner-border 1s linear infinite !important;
+  animation: spinner-border 1s linear infinite !important;
+}
+
 .blog-description {
   font-size: 1.15rem;
   font-weight: 500;
@@ -102,13 +128,10 @@ ul.blog-list {
   }
 }
 
-.post-content {
-  margin-top: 60px;
-}
-
 .post-content p {
   font-size: 1.2rem;
   font-weight: 500;
+  margin: 70px 35px;
 }
 
 .post-content ol li {
@@ -177,6 +200,10 @@ pre.code-toolbar > .toolbar a {
 .ph-200 {
   padding-top: 200px !important;
   padding-bottom: 200px !important;
+}
+
+.social-footer-buttons {
+  text-align: right !important;
 }
 
 /* PrismJS 1.22.0
