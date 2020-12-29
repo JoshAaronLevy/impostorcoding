@@ -31,6 +31,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeHeroComponent } from './components/home-hero/home-hero.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { HighlightService } from './services/highlight.service';
+import { PostComponent } from './pages/post/post.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HighlightService } from './services/highlight.service';
     LoginComponent,
     PricingpageComponent,
     HomeHeroComponent,
-    PostListComponent
+    PostListComponent,
+    PostComponent
   ],
   imports: [
     CommonModule,

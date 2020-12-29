@@ -8,19 +8,19 @@
     <ul class="col-md-12 blog-list">
       <li *ngFor="let post of posts" class="col-md-6">
         <div class="card card-blog card-background" data-animation="zooming">
-          <div class="full-background">
-            <img [src]="post.featured_image" />
-          </div>
-          <a href="javascript:;">
-            <div class="card-body">
-              <div class="content-bottom">
-                <h6 class="card-category text-white opacity-8">
-                  {{ post.categories[0].name }}
-                </h6>
-                <h5 class="card-title">{{ post.title }}</h5>
-              </div>
+          <a routerLink="{{ post.slug }}">
+            <div class="full-background">
+              <img [src]="post.featured_image" />
             </div>
           </a>
+          <div class="card-body">
+            <div class="content-bottom">
+              <h6 class="card-category text-white opacity-8">{{ post.categories[0].name }}</h6>
+              <a routerLink="{{ post.slug }}">
+                <h5 class="card-title">{{ post.title }}</h5>
+              </a>
+            </div>
+          </div>
         </div>
       </li>
     </ul>

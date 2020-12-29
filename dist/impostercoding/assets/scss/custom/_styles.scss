@@ -1,0 +1,163 @@
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mt-o-200 {
+  margin-top: -200px !important;
+}
+
+ul.blog-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 0px !important;
+}
+
+.blog-list li {
+  list-style-type: none !important;
+}
+
+.full-background img {
+  height: 100% !important;
+}
+
+.post-image-container {
+  width: 100% !important;
+}
+
+.post-featured-image {
+  max-width: 450px !important;
+}
+
+.blog-list ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.blog-list ul li {
+  margin-bottom: 40px;
+}
+
+.blog-list-image {
+  width: 100%;
+}
+
+.blog-list-image img {
+  width: 100%;
+}
+
+.blog-card {
+  display: flex;
+}
+
+.blog-title {
+  font-weight: 600;
+}
+
+.blog-image-block {
+  display: flex;
+}
+
+.blog-list-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag-section {
+  display: flex;
+  ul {
+    display: inherit;
+    li {
+      margin-bottom: 0px;
+      span {
+        background-color: rgba(52, 98, 175, 0.8);
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.blog-description {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.post-img {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 650px !important;
+  }
+}
+
+.post-content {
+  margin-top: 60px;
+}
+
+.post-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.post-content ol li {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+}
+
+.post-content ul li {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+}
+
+.post-content p img {
+  width: 100% !important;
+}
+
+pre.code-toolbar > .toolbar {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+pre.code-toolbar > .toolbar a {
+  padding-top: 0.45rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sponsor p {
+  margin-bottom: 0px;
+  color: #000000;
+}
+
+.sponsor img {
+  height: 60px;
+}
+
+.post-tag-section {
+  display: flex;
+  justify-content: center;
+}
+
+.post-tag-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: .5rem;
+  li {
+    span {
+      font-size: 16px;
+    }
+  }
+}
+

@@ -3,11 +3,9 @@ import { Injectable, Inject } from '@angular/core';
 import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
-
 // languages=markup+css+clike+javascript+csharp+bash+docker+markup-templating+git+markdown+sql+powershell+scss+python+jsx+typescript+sass+pug+vim&plugins=line-highlight+line-numbers+data-uri-highlight+custom-class+toolbar+highlight-keywords+unescaped-markup+keep-markup+copy-to-clipboard
 
 import 'clipboard';
-
 import 'prismjs';
 import 'prismjs/plugins/toolbar/prism-toolbar';
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';
