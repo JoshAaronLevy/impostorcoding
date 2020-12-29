@@ -30,6 +30,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeHeroComponent } from './components/home-hero/home-hero.component';
 import { PostListComponent } from './components/post-list/post-list.component';
+import { HighlightService } from './services/highlight.service';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { PostListComponent } from './components/post-list/post-list.component';
     ModalModule.forRoot()
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/' }
+    { provide: APP_BASE_HREF, useValue: '/' },
+    HighlightService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [
