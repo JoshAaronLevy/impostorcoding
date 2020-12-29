@@ -25,7 +25,7 @@
       </li>
     </ul>
   </div>
-  <button class="btn btn-icon btn-primary mt-4 mb-30" type="button">
+  <button *ngIf="moreAvailable" class="btn btn-icon btn-primary mt-4 mb-30" (click)="loadMore()">
     <span class="btn-inner--text"> Show more </span>
     <span class="btn-inner--icon">
       <i class="ni ni-bold-right"> </i>
