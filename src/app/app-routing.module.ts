@@ -7,13 +7,38 @@ import { LoginComponent } from './pages/login/login.component';
 import { PricingpageComponent } from './pages/pricingpage/pricingpage.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PostComponent } from './pages/post/post.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import { CategoryListComponent } from './components/category-list/category-list.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: ':slug', component: PostComponent },
-  { path: 'signup', component: SignupComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'pricing-page', component: PricingpageComponent }
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'categories',
+    component: CategoriesComponent
+  },
+  {
+    path: 'category/:slug',
+    component: CategoryListComponent
+  },
+  {
+    path: ':slug',
+    component: PostComponent
+  },
+  {
+    path: 'signup',
+    component: SignupComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'pricing-page',
+    component: PricingpageComponent
+  }
 ];
 
 @NgModule({
@@ -27,4 +52,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-home-hero',
-  templateUrl: 'home-hero.component.html'
+  selector: 'app-categories',
+  templateUrl: 'categories.component.html'
 })
-export class HomeHeroComponent implements OnInit, OnDestroy {
+export class CategoriesComponent implements OnInit, OnDestroy {
   focus;
   isCollapsed = true;
 

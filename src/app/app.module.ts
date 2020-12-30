@@ -32,6 +32,9 @@ import { HomeHeroComponent } from './components/home-hero/home-hero.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { HighlightService } from './services/highlight.service';
 import { PostComponent } from './pages/post/post.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import { CategoriesHeroComponent } from './components/categories-hero/categories-hero.component';
+import { CategoryListComponent } from './components/category-list/category-list.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { PostComponent } from './pages/post/post.component';
     PricingpageComponent,
     HomeHeroComponent,
     PostListComponent,
-    PostComponent
+    PostComponent,
+    CategoriesComponent,
+    CategoriesHeroComponent,
+    CategoryListComponent
   ],
   imports: [
     CommonModule,

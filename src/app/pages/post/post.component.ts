@@ -1,10 +1,9 @@
-import { Component, OnInit, OnDestroy, ViewEncapsulation, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { butterService } from '../../services/butterCMS.service';
 import { map, take } from 'rxjs/operators';
 import { HighlightService } from '../../services/highlight.service';
-import * as Prism from '../../../prism';
 
 @Component({
   selector: "app-post",
