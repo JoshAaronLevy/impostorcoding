@@ -47,6 +47,10 @@ a.navbar-brand {
   font-size: 1.25rem;
   letter-spacing: 0.05px;
   color: #182B4D !important;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 
   img {
     height: 30px;
@@ -79,6 +83,10 @@ a.navbar-brand:hover {
   color: #182B4D !important;
   font-weight: 500 !important;
   padding: 0rem 1.5rem !important;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .navbar-list li a:hover {
@@ -109,6 +117,10 @@ a.navbar-brand:hover {
   color: #182B4D !important;
   font-size: 22px !important;
   margin-right: 0px !important;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .navbar-social li:hover a i {

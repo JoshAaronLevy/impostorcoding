@@ -35,6 +35,7 @@ import { PostComponent } from './pages/post/post.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { CategoriesHeroComponent } from './components/categories-hero/categories-hero.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
+import { PostsByCategoryComponent } from './pages/posts-by-category/posts-by-category.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { CategoryListComponent } from './components/category-list/category-list.
     PostComponent,
     CategoriesComponent,
     CategoriesHeroComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    PostsByCategoryComponent
   ],
   imports: [
     CommonModule,

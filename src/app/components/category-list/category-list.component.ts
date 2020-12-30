@@ -23,9 +23,7 @@ export class CategoryListComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.loading = false;
-    console.log("Hello!");
     this.progressLoaderOne();
-    // this.getCategories();
   }
 
   progressLoaderOne() {
@@ -72,8 +70,9 @@ export class CategoryListComponent implements OnInit, OnDestroy {
       });
   }
 
-  selectCategory(category) {
+  viewCategory(category) {
     this.category = category.slug;
+    console.log(this.category);
     localStorage.setItem('category', this.category);
     this.router.navigate(['/category/', this.category]);
   }

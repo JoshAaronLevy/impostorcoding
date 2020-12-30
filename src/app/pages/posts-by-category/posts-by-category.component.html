@@ -1,0 +1,39 @@
+<div class="page-header">
+  <div class="page-header-image" style="background-image: url('../../../assets/img/ill/p8.svg')"></div>
+  <div class="container ph-200">
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center transparent-background">
+        <h2 *ngIf="!loading" class="display-2 home-title">{{ category }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="!loading" class="container text-center mt-50">
+  <div class="row align-items-center">
+    <ul class="col-md-12 blog-list">
+      <li *ngFor="let post of posts" class="col-md-6">
+        <div class="card card-blog card-background blog-list-item" data-animation="zooming" (click)="viewPost(post)">
+          <a routerLink="{{ post.slug }}">
+            <div class="full-background">
+              <img [src]="post.featured_image" />
+            </div>
+          </a>
+          <div class="card-body">
+            <div class="content-bottom">
+              <h6 class="card-category text-white opacity-8">{{ post.categories[0].name }}</h6>
+              <a routerLink="{{ post.slug }}">
+                <h5 class="card-title">{{ post.title }}</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <button *ngIf="moreAvailable" class="btn btn-icon btn-primary mt-4 mb-30" (click)="loadMore()">
+    <span class="btn-inner--text"> Show more </span>
+    <span class="btn-inner--icon">
+      <i class="ni ni-bold-right"> </i>
+    </span>
+  </button>
+</div>

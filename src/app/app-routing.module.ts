@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PostComponent } from './pages/post/post.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
+import { PostsByCategoryComponent } from './pages/posts-by-category/posts-by-category.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'category/:slug',
-    component: CategoryListComponent
+    component: PostsByCategoryComponent
   },
   {
     path: ':slug',
