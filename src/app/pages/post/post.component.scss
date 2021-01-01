@@ -1,10 +1,71 @@
-/* PrismJS 1.22.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+c+csharp+cpp+coffeescript+diff+docker+git+go+graphql+handlebars+http+java+js-extras+json+json5+jsonp+js-templates+kotlin+less+makefile+markdown+markup-templating+mongodb+objectivec+php+php-extras+plsql+powershell+pug+python+r+jsx+tsx+regex+ruby+sass+scss+scala+shell-session+splunk-spl+sql+stylus+swift+typescript+typoscript+vim+xml-doc+yaml&plugins=line-highlight+line-numbers+custom-class+file-highlight+show-language+jsonp-highlight+highlight-keywords+keep-markup+command-line+unescaped-markup+data-uri-highlight+toolbar+copy-to-clipboard+download-button+match-braces+diff-highlight */
-/**
- * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
- * Based on https://github.com/chriskempson/tomorrow-theme
- * @author Rose Pritchard
- */
+/* ============ Custom Post Styling ============ */
+
+.post-img {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 650px !important;
+  }
+}
+
+.post-content {
+  padding: 10px 25px !important;
+}
+
+.post-content h2 {
+  margin-bottom: -20px !important;
+  font-weight: 600 !important;
+}
+
+.post-content h2.indented {
+  margin-bottom: -20px !important;
+  margin-left: 30px !important;
+  font-weight: 600 !important;
+}
+
+.post-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 40px 30px;
+}
+
+.post-content ol li {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+}
+
+.post-content ul li {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+}
+
+.post-content p.embedded-image {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.post-content p img {
+  width: 100% !important;
+}
+
+pre.code-toolbar > .toolbar {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+pre.code-toolbar > .toolbar a {
+  padding-top: 0.45rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+/* ============ PrismJS v1.22.0 Styling ============ */
+/*
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+c+csharp+cpp+coffeescript+diff+docker+git+go+graphql+handlebars+http+java+js-extras+json+json5+jsonp+js-templates+kotlin+less+makefile+markdown+markup-templating+mongodb+objectivec+php+php-extras+plsql+powershell+pug+python+r+jsx+tsx+regex+ruby+sass+scss+scala+shell-session+splunk-spl+sql+stylus+swift+typescript+typoscript+vim+xml-doc+yaml&plugins=line-highlight+line-numbers+custom-class+file-highlight+show-language+jsonp-highlight+highlight-keywords+keep-markup+command-line+unescaped-markup+data-uri-highlight+toolbar+copy-to-clipboard+download-button+match-braces+diff-highlight
+*/
 
 code[class*='language-'],
 pre[class*='language-'] {
