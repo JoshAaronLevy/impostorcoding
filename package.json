@@ -4,6 +4,7 @@
   "scripts": {
     "start": "ng serve -o --port=4300",
     "build": "ng build",
+    "build:clean": "rm -rf dist && ng build",
     "deploy": "rm -rf dist && npm run build && firebase deploy && gitquick 'Deployed to Firebase'",
     "test": "ng test",
     "lint": "ng lint",

@@ -93,7 +93,11 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/nucleo-svg.css",
+              "src/assets/css/nucleo-icons.css",
+              "src/assets/css/font-awesome.css",
+              "src/assets/scss/argon-design-system.scss"
             ],
             "scripts": [],
             "assets": [

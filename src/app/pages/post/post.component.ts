@@ -6,8 +6,11 @@ import { map, take } from 'rxjs/operators';
 import { HighlightService } from '../../services/highlight.service';
 
 @Component({
-  selector: "app-post",
-  templateUrl: "post.component.html",
+  selector: 'app-post',
+  templateUrl: 'post.component.html',
+  styleUrls: [
+    'post.component.scss'
+  ],
   providers: [
     HighlightService
   ],
@@ -43,8 +46,8 @@ export class PostComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.loading = true;
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.add("profile-page");
+    var body = document.getElementsByTagName('body')[0];
+    body.classList.add('profile-page');
     this.showData = false;
     this.step1 = true;
     this.progressLoaderOne();
@@ -113,7 +116,7 @@ export class PostComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("profile-page");
+    var body = document.getElementsByTagName('body')[0];
+    body.classList.remove('profile-page');
   }
 }
