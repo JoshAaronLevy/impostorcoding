@@ -48,12 +48,29 @@
   width: 100% !important;
 }
 
-pre.code-toolbar > .toolbar {
-  margin-top: 8px;
+.code-toolbar > .toolbar {
+  top: 0em !important;
+  right: 0em !important;
+  margin-top: 5px;
   margin-right: 5px;
 }
 
-pre.code-toolbar > .toolbar a {
+.code-toolbar > .toolbar button {
+  padding: 0.15em 0.5em !important;
+  font-size: 1em !important;
+  color: #ffffff !important;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.code-toolbar > .toolbar button:hover {
+  color: #2D2D2D !important;
+  background-color: #F4F5F7 !important;
+}
+
+.code-toolbar > .toolbar a {
   padding-top: 0.45rem;
   padding-bottom: 0.4rem;
   padding-left: 0.9rem;
