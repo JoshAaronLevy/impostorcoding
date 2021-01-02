@@ -1,1 +1,1 @@
-# Imposter Coding
+# Impostor Coding

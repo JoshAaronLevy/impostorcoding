@@ -4,7 +4,7 @@
  * Argon Desing System PRO Angular - v2.0.0
 =========================================================
 
- * Product Page: https://www.creative-tim.com/product/imposter-coding
+ * Product Page: https://www.creative-tim.com/product/impostor-coding
  * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
 Coded by www.creative-tim.com

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/impostercoding",
+    "public": "dist/impostorcoding",
     "ignore": [
       "firebase.json",
       "**/.*",

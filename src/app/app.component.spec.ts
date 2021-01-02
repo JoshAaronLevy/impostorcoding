@@ -16,10 +16,10 @@ describe("AppComponent", () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'imposter-coding'`, () => {
+  it(`should have as title 'impostor-coding'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual("imposter-coding");
+    expect(app.title).toEqual("impostor-coding");
   });
 
   it("should render title in a h1 tag", () => {
@@ -27,7 +27,7 @@ describe("AppComponent", () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector("h1").textContent).toContain(
-      "Welcome to imposter-coding!"
+      "Welcome to impostor-coding!"
     );
   });
 });
