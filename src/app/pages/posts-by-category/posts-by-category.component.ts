@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { butterService } from '../../services/butterCMS.service';
 import { Router } from '@angular/router';
 
@@ -18,7 +19,9 @@ export class PostsByCategoryComponent implements OnInit {
   moreAvailable: boolean;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private title: Title,
+    private meta: Meta
   ) { }
 
   ngOnInit() {
@@ -34,6 +37,7 @@ export class PostsByCategoryComponent implements OnInit {
         this.loading = false;
         this.category = res.data.data.name;
         this.posts = res.data.data.recent_posts;
+        this.updateMetaData();
       });
   }
 
@@ -52,6 +56,11 @@ export class PostsByCategoryComponent implements OnInit {
         this.posts.push(this.newPosts[i]);
       }
     });
+  }
+
+  updateMetaData() {
+    this.title.setTitle(`${this.category} Posts - Impostor Coding`);
+    this.meta.updateTag({ name: 'description', content: `${this.category} Posts - Impostor Coding` });
   }
 
   viewPost(post) {

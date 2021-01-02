@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { Observable } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { butterService } from '../../services/butterCMS.service';
@@ -30,7 +31,9 @@ export class PostComponent implements OnInit, OnDestroy {
   constructor(
     protected route: ActivatedRoute,
     private router: Router,
-    private highlightService: HighlightService
+    private highlightService: HighlightService,
+    private title: Title,
+    private meta: Meta
   ) {}
 
   protected slug$: Observable<string>;
@@ -92,12 +95,18 @@ export class PostComponent implements OnInit, OnDestroy {
             this.post = res.data;
             this.step2 = false;
             this.step3 = true;
+            this.updateMetaData();
             this.progressLoaderTwo();
           })
           .catch((res) => {
             console.log(res);
           });
       });
+  }
+
+  updateMetaData() {
+    this.title.setTitle(`${this.post.data.title} - Impostor Coding`);
+    this.meta.updateTag({ name: 'description', content: `${this.post.data.title} - Impostor Coding` });
   }
   
   displayData() {

@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { butterService } from './../../services/butterCMS.service';
 
@@ -18,12 +19,20 @@ export class CategoryListComponent implements OnInit, OnDestroy {
   step4: boolean;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private title: Title,
+    private meta: Meta
   ) {}
 
   ngOnInit() {
     this.loading = false;
+    this.updateMetaData();
     this.progressLoaderOne();
+  }
+
+  updateMetaData() {
+    this.title.setTitle(`Categories - Impostor Coding`);
+    this.meta.updateTag({ name: 'description', content: `Categories - Impostor Coding` });
   }
 
   progressLoaderOne() {
